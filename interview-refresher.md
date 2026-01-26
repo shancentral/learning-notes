@@ -18,16 +18,33 @@
   - Centralized logic to avoid unnecessary props drilling
 
 ```js
- const reducer = (state, action) => {
-    switch(action.type) {
-        case "increment":
-            return {...state, state.counter + 1}
-        default:
-            return state;
-    }
- }
+ import React, { useEffect, useReducer, useState } from 'react';
 
- const [state, dispatch] = useReducer(reducer, {counter: 0});
+const App = () => {
+  const reducer = (state, action) => {
+    switch(action.type) {
+      case "increment":
+        return {...state, counter: state.counter + 1}
+      default:
+        return state;
+    }
+  }
+
+ const [state, dispatch] = useReducer(reducer, {counter: 0, timer: 0});
+ 
+ useEffect(() => {
+   dispatch({type: "increment"});
+ }, []);
+ 
+  return (
+   <h3>{JSON.stringify(state)}</h3>
+  )
+}
+
+export default App
+
+// output
+// {"counter":1,"timer":0}
 ```
 
 - Bundle optimization
