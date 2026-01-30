@@ -35,6 +35,10 @@ const state = {
   test1: 1,
   test2: 2
 }
+
+console.log({...state, [testN]: state[testN] + 1})
+// { test1: 2, test2: 2 }
+```
 ---
 ```js
 console.log(Array.from({ length: 5 }));
@@ -50,7 +54,3 @@ console.log(Array.from({ length: 5 }, (_value, i) => i));
 // Output: [0, 1, 2, 3, 4]
 ```
 ---
-
-console.log({...state, [testN]: state[testN] + 1})
-// { test1: 2, test2: 2 }
-```
