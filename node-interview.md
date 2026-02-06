@@ -109,7 +109,7 @@ node --env-file=.env app.js
 - Clustering is ideal for high traffic applications
 - The master process forks a worker process for each CPU core
 - Each worker handles incoming requests, distributing the load and improving performance
--
+- 
 ```js
 const cluster = require('cluster');
 const http = require('http');
