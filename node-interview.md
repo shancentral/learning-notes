@@ -78,6 +78,7 @@ fs.promises.readFile('file.txt', 'utf8')
   .catch((err) => console.error('Error:', err.message));
 ```
 - Using Async Await with Try catch
+- 
 ```js
 async function readFile() {
   try {
