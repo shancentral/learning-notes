@@ -1,7 +1,7 @@
 # Node JS
 
 ## Okta Integration Guide
-- https://www.youtube.com/watch?v=1XxQBXl4Lv8
+- [OktaDev - Youtube](https://www.youtube.com/watch?v=1XxQBXl4Lv8)
 
 ## Interview Questions
 
