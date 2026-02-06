@@ -108,8 +108,8 @@
 	- Creating multiple instances of your application to take advantage of multi-core processors
 	- Clustering is ideal for high traffic applications
 	- The master process forks a worker process for each CPU core
-	- Each worker handles incoming requests, distributing the load and improving performance
-	-
+ 	- Each worker handles incoming requests, distributing the load and improving performance
+  	- 
 	```js
 	const cluster = require('cluster');
 	const http = require('http');
@@ -138,8 +138,8 @@
 
 14. process.nextTick() vs setImmediate()
 	- process.nextTick() - Executes callbacks at the end of the current operation, before I/O events
-	- setImmediate() - Executes callbacks at the end of the current operation, after I/O events
-	-
+ 	- setImmediate() - Executes callbacks at the end of the current operation, after I/O events
+  	- 
 	```js
 	(()=>{
 	    let stockPrice=1000;
