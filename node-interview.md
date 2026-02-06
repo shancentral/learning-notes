@@ -60,7 +60,7 @@ readFile("example.txt", "utf-8", (err, data)=> {})
 
 9. Error Handling
 - Using Callbacks with err param
-
+-
 ```js
 fs.readFile('file.txt', 'utf8', (err, data) => {
   if (err) {
@@ -71,6 +71,7 @@ fs.readFile('file.txt', 'utf8', (err, data) => {
 });
 ```
 - Using Promises with catch
+- 
 ```js
 fs.promises.readFile('file.txt', 'utf8')
   .then((data) => console.log(data))
@@ -91,12 +92,14 @@ readFile();
 
 10. Environment variables
 - Using Dot Env package
+- 
 ```js
 require('dotenv').config();
 const dbHost = process.env.DB_HOST;
 ```
 
 - Using Flags (Node 20.6.0+)
+- 
 ```js
 node --env-file=.env app.js
 ```
@@ -106,6 +109,7 @@ node --env-file=.env app.js
 - Clustering is ideal for high traffic applications
 - The master process forks a worker process for each CPU core
 - Each worker handles incoming requests, distributing the load and improving performance
+- 
 ```js
 const cluster = require('cluster');
 const http = require('http');
@@ -135,6 +139,7 @@ if (cluster.isMaster) {
 14. process.nextTick() vs setImmediate()
 - process.nextTick() - Executes callbacks at the end of the current operation, before I/O events
 - setImmediate() - Executes callbacks at the end of the current operation, after I/O events
+- 
 ```js
 (()=>{
     let stockPrice=1000;
