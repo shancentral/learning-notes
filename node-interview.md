@@ -98,7 +98,6 @@ readFile();
 require('dotenv').config();
 const dbHost = process.env.DB_HOST;
 ```
-
 - Using Flags (Node 20.6.0+)
 - 
 ```js
