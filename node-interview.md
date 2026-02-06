@@ -105,28 +105,28 @@ node --env-file=.env app.js
 ```
 
 11. Clustering
-- Creating multiple instances of your application to take advantage of multi-core processors
-- Clustering is ideal for high traffic applications
-- The master process forks a worker process for each CPU core
-- Each worker handles incoming requests, distributing the load and improving performance
-- 
-```js
-const cluster = require('cluster');
-const http = require('http');
-const os = require('os');
-
-if (cluster.isMaster) {
-  const numCPUs = os.cpus().length;
-  for (let i = 0; i < numCPUs; i++) {
-	cluster.fork(); // Create a worker process
-  }
-} else {
-  http.createServer((req, res) => {
-	res.writeHead(200);
-	res.end('Hello, World!');
-  }).listen(3000);
-}
-```
+	- Creating multiple instances of your application to take advantage of multi-core processors
+	- Clustering is ideal for high traffic applications
+	- The master process forks a worker process for each CPU core
+	- Each worker handles incoming requests, distributing the load and improving performance
+	- 
+	```js
+	const cluster = require('cluster');
+	const http = require('http');
+	const os = require('os');
+	
+	if (cluster.isMaster) {
+	  const numCPUs = os.cpus().length;
+	  for (let i = 0; i < numCPUs; i++) {
+		cluster.fork(); // Create a worker process
+	  }
+	} else {
+	  http.createServer((req, res) => {
+		res.writeHead(200);
+		res.end('Hello, World!');
+	  }).listen(3000);
+	}
+	```
 
 12. Worker Threads
 - Run code in parallel threads & useful for CPU intensive tasks
