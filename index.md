@@ -2,5 +2,7 @@
 - [JS Intricates](https://shancentral.github.io/learning-notes/js-intricates)
 - [Interview Refresher](https://shancentral.github.io/learning-notes/interview-refresher)
 - [Node Interview](https://shancentral.github.io/learning-notes/node-interview)
+- [Flight Booking - Project](https://shancentral.github.io/learning-notes/flight-booking-project)
+
 
 
