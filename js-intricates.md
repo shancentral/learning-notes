@@ -9,19 +9,6 @@ console.log(a); // 10
 ```
 ---
 ```js
-const arr = [1];
-arr[0] = 2;
-
-console.log(arr); // [2]
-```
----
-```js
-// syntax to return an object
-
-const func = () => ({ test: "test" })
-```
----
-```js
 // syntax to return an object
 
 const func = () => ({ test: "test" })
