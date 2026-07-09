@@ -7,10 +7,11 @@
 6. ALWAYS obey DRY and SOLID patterns when generating code.
 7. ALWAYS use fetch for API calls.
 8. PREFER feature based organisation over technical organisation. Shared code MUST ONLY exist in shared folder.
-9. ALWAYS use Light theme background and Maintain good color contrast ratio.
-10. ALWAYS follow Modern and Enterprise grade UX guidelines when creating Layouts & Components.
-11. Never run any tests, accessibility checks, linting unless requested.
-12. Use pnpm for Package Management.
+9. ALWAYS use Lazy loading for Routes.
+10. ALWAYS use Light theme background and Maintain good color contrast ratio.
+11. ALWAYS follow Modern and Enterprise grade UX guidelines when creating Layouts & Components.
+12. Never run any tests, accessibility checks, linting unless requested.
+13. Use pnpm for Package Management.
 
 # Agents & Skills
 Based on the above requirements create necessary Agents, Skills & AGENT.md files. Additionally make sure to create separate Agents and their required Skills for Testing, Accessibility validation & Linting. Place the Agents & Skill files in an optimal folder location to work seamlessly with Github Copilot.
