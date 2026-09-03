@@ -3,3 +3,6 @@
 - [Interview Refresher](https://shancentral.github.io/learning-notes/interview-refresher)
 - [Node Interview](https://shancentral.github.io/learning-notes/node-interview)
 - [Flight Booking - Project](https://shancentral.github.io/learning-notes/flight-booking-project)
+- [React Project Setup](https://shancentral.github.io/learning-notes/react-project-setup)
+- [Vibe Coding](https://shancentral.github.io/learning-notes/vibe-coding)
+- [CoPilot Prompt](https://shancentral.github.io/learning-notes/copilot-prompt)
